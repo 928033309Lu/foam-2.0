@@ -1,0 +1,76 @@
+.bill{
+  >.el-header{
+    height:40px!important;
+    overflow: hidden;
+    color:#fff;
+    line-height:40px;
+    .borsin(bottom,rgba(43,103,139,1));
+    span:first-child{
+      font-size:16px;
+    }
+    span:last-child{
+      float:right;
+      cursor:pointer;
+      font-size:14px;
+    }
+  }
+  .el-main{
+    padding:0 17px;
+    .el-header{
+      height:50px!important;
+      line-height:40px;
+      padding:10px 0 0;
+      overflow: hidden;
+      >span{
+        color:#fff;
+      }
+      .el-input{
+        width:200px;
+        margin-left:14px;
+        input{
+          background:transparent;
+          .bor(rgba(3,73,114,1));
+          height:30px;
+          color:rgba(255,255,255,.7);
+        }
+      }
+      .choose-time{
+        float:right;
+        >span{
+          margin-right:10px;
+          color:#fff;
+        }
+        .el-date-editor{
+          width:300px;
+          line-height:30px;
+          padding:0 10px;
+          &.el-input__inner{
+            height:30px;
+            line-height:28px;
+            background:transparent;
+            .bor(rgba(3,73,114,1));
+            .el-range-input{
+              background:transparent;
+            }
+            .el-range-separator{
+              color:@lhiteColor;
+            }
+          }
+        }
+      }
+    }
+  }
+  .el-footer{
+    height:40px!important;
+    margin-top:10px;
+    position:absolute;
+    right:0;
+    bottom:5px;
+    .el-pagination{
+      float:right;
+    }
+  }
+  .el-range-input{
+    color:#fff;
+  }
+}

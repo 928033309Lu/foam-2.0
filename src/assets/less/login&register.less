@@ -1,0 +1,161 @@
+.register-container{
+    .custom-size();
+    background: url("../../../public/imgs/bottom-bg.png") no-repeat left bottom;
+    background-size:100% auto;
+    .el-container{
+        .custom-size();
+        display:flex;
+        flex-direction: column;
+        .el-header{
+            height:50px!important;
+            background:linear-gradient(90deg,rgba(20,30,36,1),rgba(0,96,145,0.65),rgba(20,30,36,0.99));
+            line-height:50px;
+            padding:0 45px;
+            .header-left{
+                float:left;
+                font-size:0;
+                > * {
+                    display:inline-block;
+                    vertical-align: middle;
+                }
+                >span{
+                    width:1px;
+                    height:20px;
+                    background:rgba(255,255,255,.3);
+                    margin:0 10px;
+                }
+            }
+            .header-right{
+                float:right;
+                color:#fff;
+                font-weight:500;
+                cursor:pointer;
+            }
+        }
+        .el-main{
+            flex:1;
+            > ul{
+                display:flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content:center;
+                margin-top:50px;
+                li{
+                    color:#999;
+                    text-align:center;
+                    &.step{
+                        i{
+                            font-size:24px;
+                        }
+                    }
+                    &.line{
+                        width:200px;
+                        height:1px;
+                        margin:-15px 20px 0 ;
+                        background:#999;
+                    }
+                    &.active{
+                        color:#009FFF;
+                        &.line{
+                            background:#009FFF;
+                        }
+                    }
+                }
+            }
+            .form{
+                width:310px;
+                margin:40px auto 0;
+                overflow: hidden;
+                > h3 {
+                    font-size:16px;
+                    color:#555;
+                    margin-bottom:20px;
+                }
+                .el-form{
+                    .el-form-item__label:before{
+                        display:none;
+                    }
+                    .el-form-item__label{
+                        line-height:30px;
+                    }
+                    .el-form-item{
+                        margin-bottom:16px;
+                    }
+                    .el-form-item__content{
+                        height:30px;
+                        line-height:30px;
+                        .el-input__inner{
+                            height:30px;
+                            line-height:30px;
+                            border-radius:0;
+                        }
+                    }
+                    .code {
+                        .el-input{
+                            width:125px;
+                        }
+                        .get-code{
+                            width:90px;
+                            height:30px;
+                            padding:0;
+                            margin-left:10px;
+                            text-align:center;
+                            line-height:30px;
+                            border:none;
+                            color:#fff;
+                            background:#009FFF;
+                            font-size:12px;
+                            &.no-allow{
+                                background:#ccc;
+                                cursor:not-allowed;
+                            }
+                        }
+                    }
+                }
+                .submit-btn{
+                    width:310px;
+                    height:30px;
+                    margin-top:20px;
+                    background:rgba(215,226,233,1);
+                    padding:0;
+                    text-align:center;
+                    line-height:30px;
+                    color:#6F828D;
+                    cursor:not-allowed;
+                    border:none;
+                    transition: all .3s ease;
+                    &.active{
+                        background:rgba(0,159,255,1);
+                        color:#fff;
+                        cursor:pointer;
+                    }
+                    &.hover:hover{
+                        background:rgba(0,159,255,1);
+                        color:#fff;
+                        cursor:pointer;
+                    }
+                }
+                .register-success{
+                    margin-top:50px;
+                    text-align:center;
+                    i{
+                        font-size:48px;
+                        color:rgb(0,195,127);
+                    }
+                    .tip{
+                        font-size:16px;
+                        color:#555;
+                        margin:30px;
+                    }
+                    .time{
+                        color:#DDDDDD;
+                        font-size:14px;
+                      &:last-child{
+                        margin-bottom:30px;
+                      }
+                    }
+                }
+            }
+        }
+    }
+}

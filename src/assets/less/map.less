@@ -1,0 +1,186 @@
+.basemap-region-tooltip{
+  padding: 3px 6px !important;
+  border: 0px solid rgba(33,151,216,1) !important;
+  background:rgba(33,151,216,1) !important;
+  border-radius:4px !important;
+}
+/*.basemap-machine-icon-img{
+  width: 32px;
+  height: 32px;
+  filter: drop-shadow(3px 3px 3px black);
+}
+.basemap-farm-icon-img{
+  width: 32px;
+  height: 32px;
+}
+.basemap-farm-icon-img:hover{
+  content: url("/images/icon_farm_over.png");
+  width: 32px;
+  height: 32px;
+}*/
+.basemap-farm-icon-tooltip{
+  padding: 0px !important;
+  border: 0px solid #fff !important;
+  background-color: rgba(0,0,0,0) !important;
+}
+.basemap-farm-icon-tooltip:before{
+  left: 0 !important;
+  margin-left: -12px !important;
+  margin-top: -18px !important;
+  border-right-color: #00506b !important;
+}
+.basemap-farm-icon-tooltip-div{
+  min-width: 180px;
+  text-align: left;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 24px;
+  background-color: @listColor;
+  &:before{
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-width: 3.5px;
+    border-style: solid;
+    border-color: @error transparent transparent @error;
+  }
+  &:after{
+    position: absolute;
+    right: 3px;
+    bottom: 3px;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-width: 3.5px;
+    border-style: solid;
+    border-color: transparent @error @error transparent;
+  }
+}
+.basemap-farm-icon-tooltip-textdiv{
+  padding-left: 3px;padding-right: 3px;
+  color: @whiteColor;
+  font-weight:600;
+  font-style: 14px;
+  &.title{
+    color: #fff;
+    margin-bottom: 8px;
+  }
+  span{
+    font-size: 12px;
+    font-weight: normal;
+  }
+}
+.basemap-farm-icon-tooltip-lefttop-div{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 10px;
+  height: 10px;
+  border-top: 1px solid rgba(82,217,252,1);
+  border-left: 1px solid rgba(82,217,252,1);
+}
+.basemap-farm-icon-tooltip-leftbottom-div{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 10px;
+  height: 10px;
+  border-bottom: 1px solid rgba(82,217,252,1);
+  border-left: 1px solid rgba(82,217,252,1);
+}
+.basemap-farm-icon-tooltip-righttop-div{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 10px;
+  height: 10px;
+  border-top: 1px solid rgba(82,217,252,1);
+  border-right: 1px solid rgba(82,217,252,1);
+}
+.basemap-farm-icon-tooltip-rightbottom-div{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 10px;
+  height: 10px;
+  border-bottom: 1px solid rgba(82,217,252,1);
+  border-right: 1px solid rgba(82,217,252,1);
+}
+
+.leaflet-tooltip-top:before {
+  bottom: 0;
+  margin-bottom: -12px;
+  border-top-color: #001828!important;
+}
+.leaflet-control-container{
+  .leaflet-bottom{
+    bottom: 70px;
+  }
+  .leaflet-right{
+    right: 15px;
+  }
+}
+.leaflet-touch{
+  .leaflet-bar{
+    border: none !important;
+    a:first-child:after{
+      position: absolute;
+      content: '';
+      display: inline-block;
+      width: 27px;
+      left: 5px;
+      bottom: 0;
+      border-top: 1px solid #2C6180;//白志强
+    }
+    a,
+    a:hover{
+      position: relative;
+      width: 36px !important;
+      height: 37px !important;
+      background-color: #222D34 !important;
+      color: #fff !important;
+      border-bottom: none !important;
+      line-height: 37px !important;
+    }
+  }
+}
+.compass{
+  position: fixed;
+  right: 14px;
+  bottom: 225px;
+  z-index: 500;
+  border-radius: 50%;
+  width: 59px;
+  height: 59px;
+  background: url(/icon/compass.png) no-repeat center/ contain;
+}
+.positioning{
+  position: fixed;
+  right: 25px;
+  bottom: 158px;
+  z-index: 500;
+  border-radius: 2px;
+  width: 36px;
+  height: 36px;
+  background: url(/icon/positioning.png) no-repeat center/ contain;
+}
+.map-change{
+  position: fixed;
+  right: 25px;
+  bottom: 16px;
+  z-index: 500;
+  border-radius: 2px;
+  width: 60px;
+  height: 60px;
+  background: url(/icon/map-change.png) no-repeat center/ contain;
+  cursor: pointer;
+}
+
+.leaflet-top, .leaflet-bottom{
+  z-index: 500 !important;
+}

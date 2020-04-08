@@ -1,0 +1,261 @@
+
+.my-form {
+    .el-form-item{
+      margin-bottom: 13px !important;
+    }
+    .el-input__inner {
+        background-color: transparent !important;
+        border-color: #2B678B !important;
+        padding: 0 6px;
+        color: #bbb;
+        border-radius: 0 !important;
+    }
+    .el-textarea__inner {
+      background-color: transparent !important;
+      border-color: #2B678B !important;
+      padding: 8px 6px;
+      color: #bbb;
+      border-radius: 0 !important;
+  }
+
+    .el-form-item__label {
+        color: rgba(255, 255, 255, .7);
+    }
+
+    input::-webkit-input-placeholder {
+        color: rgba(255, 255, 255, .3);
+    }
+
+    .el-form-item.is-error .el-input__inner,
+    .el-form-item.is-error .el-input__inner:focus,
+    .el-form-item.is-error .el-textarea__inner,
+    .el-form-item.is-error .el-textarea__inner:focus,
+    .el-message-box__input input.invalid,
+    .el-message-box__input input.invalid:focus {
+        border-color: #FF2E76 !important;
+    }
+}
+
+.my-menu.el-menu {
+    border-right: none;
+    .el-submenu__title{
+        //margin: 0 5px;
+    }
+    .el-submenu.is-active{
+      .el-submenu__title{
+        color: @highColor !important;
+      }
+    }
+    .el-menu-item{
+        //margin: 0 5px;
+        height: 40px !important;
+            line-height: 40px !important;
+        &.is-active {
+
+            background-color: transparent !important;
+
+            background: url('/imgs/side.png') no-repeat 10px 0;
+          text-align: center;
+            // background-clip:content-box;
+            background-size: 100px 40px;
+        }
+
+    }
+    >.el-menu-item{
+      //margin: 0 5px;
+    }
+    .el-submenu {
+        .el-menu-item {
+            padding: 0px !important;
+            // padding-left: 30px !important;
+            text-align: center;
+            height: 36px !important;
+            line-height: 35px !important;
+            font-size: 14px;
+            min-width: 85px;
+
+            &.is-active {
+                margin: 0 10px;
+                background-color: transparent !important;
+
+                background: url('/imgs/side.png') no-repeat;
+                // background-clip:content-box;
+                background-size: 100% 100%;
+            }
+        }
+    }
+}
+
+.el-message-box {
+    background-color: @sideBlack  !important;
+    border: none !important;
+
+    .el-message-box__content {
+        color: @whiteColor  !important;
+    }
+}
+
+.el-pager li {
+    background: rgba(255, 255, 255, 0) !important;
+    color: @whiteColor;
+}
+
+.el-pagination .btn-next,
+.el-pagination .btn-prev {
+    background: center center no-repeat rgba(255, 255, 255, 0) !important;
+    color: @whiteColor  !important;
+}
+
+.el-pagination button:hover {
+    color: @highColor  !important;
+}
+
+.el-pager li.btn-quicknext,
+.el-pager li.btn-quickprev,
+.el-pagination__jump {
+    color: @whiteColor  !important;
+}
+
+.el-pagination__editor.el-input .el-input__inner {
+    background-color: transparent !important;
+    .bor(@borColor);
+    height: 24px !important;
+    color: @whiteColor;
+  border-radius: 0;
+}
+
+.el-dropdown-menu {
+    background-color: @sideBlack !important;
+    .bor(@sideBlack) !important;
+
+}
+
+.el-dropdown-menu__item {
+    color: @whiteColor !important;
+}
+
+.el-dropdown-menu__item:focus,
+.el-dropdown-menu__item:not(.is-disabled):hover {
+    background-color: @btnColor !important;
+    color: #66b1ff !important;
+}
+
+.el-cascader {
+    .el-input__inner {
+        .bor(@tborder);
+        background-color: transparent;
+        color: @hWhiteColor;
+    }
+}
+
+.el-cascader:not(.is-disabled):hover .el-input__inner {
+
+    border-color: #409EFF !important;
+}
+
+.mybtn-bottom{
+    padding: 3px 19px;
+    .bor(@inputColor);
+    background:transparent;
+    color:@highColor;
+    cursor: pointer;
+    font-size: 14px;
+    &>i{
+    font-size: 12px;
+    }
+    &:focus{
+      outline:none;
+    }
+    &.active{
+        .bor(@highColor);
+        border-bottom:none;
+        outline:none;
+      }
+  }
+  //固定长度，白色字体
+  .g-btn{
+    padding: 3px 5px;
+    .bor(@tborder);
+    background:transparent;
+    color:@whiteColor;
+    cursor: pointer;
+    &>i{
+    font-size: 12px;
+    }
+    &:hover{
+      .bor(@highColor);
+      background-color: @btnColor;
+      background-clip:content-box;
+    }
+  }
+  //级联选择器
+  .el-cascader-panel{
+    border-radius: 0 !important;
+    .el-cascader-node__label{
+      padding-left: 0;
+    }
+    .el-cascader-node__prefix{
+      left: 4px;
+    }
+    .el-cascader-menu__empty-text{
+      white-space: nowrap;
+    }
+    .el-cascader-node{
+      &.group{
+        border-bottom: 1px solid #245e80;
+        &:after{
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          display: block;
+          width: 100%;
+          height: 1px;
+          background-color: #044467;
+        }
+      }
+    }
+  }
+  .el-cascader__dropdown{
+    margin: 0 !important;
+      background: @btnColor!important;
+      .bor(@borColor)!important;
+      .el-checkbox__inner{
+          background:none;
+          .bor(@borColor);
+      }
+      &:hover{
+        .bor(@borColor);
+      }
+      .el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+        background-color: @sideBlack!important;
+        border-color: @sideBlack;
+      }
+    .el-checkbox__input.is-focus .el-checkbox__inner{
+        border-color: @borColor!important;
+    }
+  }
+  .el-cascader-menu{
+      min-width: 100px!important;
+      border-right:none!important;
+      color:@hWhiteColor!important;
+      background:rgba(0,75,119,1);
+      border:1px solid rgba(36,94,128,1);
+      box-shadow:0px 1px 2px 0px rgba(20, 36, 30, 0.35);
+  }
+
+  .el-cascader-node:not(.is-disabled):focus, .el-cascader-node:not(.is-disabled):hover{
+      background:rgba(0,159,255,.4)!important;
+      color: #fff;
+  }
+  .el-cascader__tags .el-tag{
+      background: none!important;
+      color:@whiteColor!important;
+      .el-icon-close{
+        background:@highColor!important;
+      }
+  }
+  button:focus{
+      outline: none;
+  }
+ 
