@@ -14,7 +14,7 @@
     "element-ui": "^2.10.1",
     "highcharts": "^7.1.2",
     "html2canvas": "^1.0.0-rc.5",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "js-joda": "^1.11.0",
     "leaflet": "1.5.1",
     "leaflet-polylinedecorator": "^1.6.0",
